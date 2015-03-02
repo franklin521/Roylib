@@ -3,6 +3,10 @@ chunfeng yuan create library on 2014-10-30
  */
 
  // Return the number of cpu. If detection fails, it will return -1;
+#include <stdio.h>
+#include <string.h>
+#include <malloc.h>
+
 int get_nb_cpus()
 {
 		// Optmization for windows: use GetSystemInfo()
