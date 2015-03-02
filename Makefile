@@ -14,10 +14,12 @@ all: target
 
 .PHONY: all
 
+
 target: $(OBJS)
 	$(CC) -shared -o $(TARGET) $(OBJS)
 
 $(OBJS): %.o: %.c 
+#	@echo compiling $< ...
 	$(CC) $(CFLAGS) -o $@ $<
 
 
