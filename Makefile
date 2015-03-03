@@ -10,9 +10,10 @@ export CFLAGS
 #export all variables
 #export
 
-SRC= util.c misc.c stack.c red_black_tree.c
+SRC := util.c misc.c stack.c red_black_tree.c
 
-OBJS= util.o misc.o stack.o red_black_tree.o
+#OBJS= util.o misc.o stack.o red_black_tree.o
+OBJS := $(SRC:.c=.o)
 
 TARGET=libRoylib$(SUFFIX)
 

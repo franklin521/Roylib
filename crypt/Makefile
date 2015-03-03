@@ -3,8 +3,9 @@
 #CC=gcc
 #CFLAGS = -c -fpic
 
-SRC=base64.c
-OBJS=base64.o
+SRC := base64.c
+#OBJS=base64.o
+OBJS := $(SRC:.c=.o)
 
 all: $(OBJS)
 
