@@ -9,7 +9,8 @@ OBJS := $(SRC:.c=.o)
 
 all: $(OBJS)
 
-$(OBJS): %.o: %.c
+#$(OBJS): %.o: %.c
+.c.a:
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
